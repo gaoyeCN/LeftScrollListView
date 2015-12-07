@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="LeftScrollListView"><attr format="reference" name="leftscroll_rightview"/><attr format="reference" name="leftscroll_leftview"/><attr format="reference" name="leftscroll_alphaview"/><attr format="boolean" name="leftscroll_issort"/></declare-styleable>
+    <!-- From: file:/E:/as/MyApplication/leftScrollListView/build/intermediates/bundles/debug/res/values/values.xml -->
+    <eat-comment/>
+    <string name="app_name">LeftScrollListView</string>
+    <string name="hello_world">Hello world!</string>
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+</resources>

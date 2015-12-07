@@ -1,0 +1,16 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="me.bandu.talk.android.phone.fragment.ClassSetFragment"
+    xmlns:leftlistview="http://schemas.android.com/apk/res/com.fy.administrator.leftscrolllistview" >
+            <com.fy.leftscrolllistview.LeftScrollListView
+                leftlistview:leftscroll_issort="true"
+                leftlistview:leftscroll_rightview="@layout/layout_right"
+                leftlistview:leftscroll_leftview="@layout/layout_left"
+                leftlistview:leftscroll_alphaview="@layout/layout_alpha"
+                android:fadingEdge="none"
+                android:id="@+id/slv_student"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollbars="none"/>
+</RelativeLayout>

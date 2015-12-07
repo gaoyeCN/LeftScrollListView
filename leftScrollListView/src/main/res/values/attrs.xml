@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="LeftScrollListView">
+        <attr name="leftscroll_rightview" format="reference" />
+        <attr name="leftscroll_leftview" format="reference"/>
+        <attr name="leftscroll_alphaview" format="reference"/>
+        <attr name="leftscroll_issort" format="boolean"/>
+    </declare-styleable>
+</resources>

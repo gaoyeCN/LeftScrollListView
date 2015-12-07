@@ -1,0 +1,14 @@
+int attr leftscroll_alphaview 0x7f010002
+int attr leftscroll_issort 0x7f010003
+int attr leftscroll_leftview 0x7f010001
+int attr leftscroll_rightview 0x7f010000
+int drawable ic_launcher 0x7f020000
+int string app_name 0x7f040000
+int string hello_world 0x7f040001
+int style AppBaseTheme 0x7f030000
+int style AppTheme 0x7f030001
+int[] styleable LeftScrollListView { 0x7f010000, 0x7f010001, 0x7f010002, 0x7f010003 }
+int styleable LeftScrollListView_leftscroll_alphaview 2
+int styleable LeftScrollListView_leftscroll_issort 3
+int styleable LeftScrollListView_leftscroll_leftview 1
+int styleable LeftScrollListView_leftscroll_rightview 0
