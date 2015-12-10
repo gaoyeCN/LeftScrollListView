@@ -14,6 +14,44 @@ adapter需继承LeftScrollAdapter,实现三个方法
 	void setRight(View view,int position); 右布局所在的view以及在listview中的position
 	void setLeft(View view,int position);  左布局所在的view以及在listview中的position
 	
+adapter示例:
+public class TStudentAdapter extends LeftScrollAdapter{
+	private final String TAG = "com.fy.listview.TStudentAdapter";
+	private List<TStudentBean> students;
+	private Context context;
+	private List<ViewHolder> holders;
+	private int width;
 	
+	public TStudentAdapter(Context context, List<TStudentBean> students) {
+		super(context, students);
+		this.students = students;
+		this.context = context;
+	}
+
+	@Override
+	protected void setAlpha(View view, int position) {
+		TStudentBean studentBean = students.get(position);
+		TextView tView = (TextView) view.findViewById(R.id.tv_itemalpha);
+		tView.setText(studentBean.getItemAlphaString());
+		//根据position获取分类的首字母的Char ascii值
+		int section = getSectionForPosition(position);
+				if(position == getPositionForSection(section)){
+					tView.setVisibility(View.VISIBLE);
+				}else{
+					tView.setVisibility(View.GONE);
+				}
+	}
+
+	@Override
+	protected void setRight(View view, int position) {
+		
+	}
+
+	@Override
+	protected void setLeft(View view, int position) {
+		
+	}
+
+}
 	
 QQ:1391142249
