@@ -3,17 +3,29 @@ Listview左滑最常用的是SwipListView
 但如果加入首字母分组的话，SwipListview会连同首字母一起向左划
 
 LeftScrollListView则支持首字母分组
-使用LeftScrollListView时，每个item的bean类需继承LeftScrollItemBean,并调用setItemAlphaString(String itemAlphaString);设置首字母
+使用LeftScrollListView时，每个item的bean类需继承LeftScrollItemBean,并调用setItemAlphaString(String itemAlphaString);
+设置首字母：
+class TStudentBean extends LeftScrollItemBean
 LeftScrollListView属性:
   1、leftscroll_rightview(右view的resourceId)
   2、leftscroll_leftview(左view的resourceId)
   3、leftscroll_alphaview(首字母所在的view的resourceId)
   4、leftscroll_issort(是否进行排序)
+  属性使用示例：
+  <com.fy.leftscrolllistview.LeftScrollListView
+                leftlistview:leftscroll_issort="true"
+                leftlistview:leftscroll_rightview="@layout/layout_right"
+                leftlistview:leftscroll_leftview="@layout/layout_left"
+                leftlistview:leftscroll_alphaview="@layout/layout_alpha"
+                android:fadingEdge="none"
+                android:id="@+id/slv_student"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollbars="none"/>
 adapter需继承LeftScrollAdapter,实现三个方法
   void setAlpha(View view,int position);  首字母所在的view以及在listview中的position
 	void setRight(View view,int position); 右布局所在的view以及在listview中的position
 	void setLeft(View view,int position);  左布局所在的view以及在listview中的position
-	
 adapter示例:
 public class TStudentAdapter extends LeftScrollAdapter{
 	private final String TAG = "com.fy.listview.TStudentAdapter";
